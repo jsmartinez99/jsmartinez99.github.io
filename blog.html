@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="alternate icon" href="assets/favicon.ico">
+<title>Blog | Juan Sebastián Martínez</title>
+<link rel="stylesheet" href="styles.css">
+<meta name="description" content="Blog de Juan Sebastián Martínez — Cybersecurity Architect & AI Infrastructure Engineer. Artículos sobre seguridad, AI, y tecnología.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Blog | Juan Sebastián Martínez">
+<meta property="og:description" content="Artículos sobre ciberseguridad, AI, y tecnología.">
+<link rel="alternate" hreflang="es" href="https://jmartinez.dev/blog.html">
+<link rel="alternate" hreflang="en" href="https://jmartinez.dev/blog.html?lang=en">
+<script defer src="assets/js/i18n.js"></script>
+<!-- Umami analytics desactivado hasta deploy del server -->
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">JSM_SEC // v2025.2</div>
+  <ul class="nav-links">
+    <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+    <li><a href="index.html#about" data-i18n="nav.about">Perfil</a></li>
+    <li><a href="index.html#skills" data-i18n="nav.skills">Skills</a></li>
+    <li><a href="index.html#contacto" data-i18n="nav.contact">Contacto</a></li>
+    <li class="lang-toggle">
+      <button onclick="i18n.setLang('es')" class="lang-btn active" data-lang="es" data-i18n="lang.es">ES</button>
+      <span class="lang-sep">|</span>
+      <button onclick="i18n.setLang('en')" class="lang-btn" data-lang="en" data-i18n="lang.en">EN</button>
+    </li>
+  </ul>
+</nav>
+
+<div id="hero" style="min-height:50vh;padding:120px 48px 40px">
+  <div class="hero-inner">
+    <div class="hero-tag" data-i18n="nav.blog">Blog</div>
+    <h1 data-i18n="nav.blog">Blog</h1>
+    <p class="hero-title" style="max-width:none">Artículos sobre ciberseguridad, AI infrastructure y orquestación de agentes.</p>
+  </div>
+</div>
+
+<section id="blog-posts">
+  <div class="posts-grid" id="posts-container">
+    <!-- Posts se cargan dinámicamente vía JS -->
+    <p style="color:var(--muted)">Cargando artículos...</p>
+  </div>
+</section>
+
+<footer>
+  <div data-i18n="footer.text">Juan Sebastián Martínez · Asunción, Paraguay</div>
+  <div style="margin-top:8px;font-size:11px" data-i18n="footer.sub">Cybersecurity Architect · AI Infrastructure · 20+ años de experiencia</div>
+</footer>
+
+<script>
+// Cargar lista de posts desde el índice JSON
+fetch('/posts/index.json')
+  .then(r => r.json())
+  .then(posts => {
+    const container = document.getElementById('posts-container');
+    if (posts.length === 0) {
+      container.innerHTML = '<p style="color:var(--muted)">No hay artículos aún. ¡Volvé pronto!</p>';
+      return;
+    }
+    container.innerHTML = posts.map(post => `
+      <article class="post-card">
+        <div class="post-date">${post.date}</div>
+        <h3><a href="posts-built/${post.lang}/${post.slug}.html">${post.title}</a></h3>
+        <p class="post-excerpt">${post.description}</p>
+        <div class="post-tags">${(post.tags || []).map(t => `<span class="tag">${t}</span>`).join('')}</div>
+      </article>
+    `).join('');
+  })
+  .catch(err => {
+    document.getElementById('posts-container').innerHTML = '<p style="color:var(--muted)">Error al cargar artículos.</p>';
+  });
+</script>
+
+<style>
+.posts-grid {
+  display: grid;
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 48px 80px;
+}
+.post-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 8px;
+  padding: 24px;
+  transition: border-color 0.2s;
+}
+.post-card:hover {
+  border-color: rgba(0,200,255,0.2);
+}
+.post-date {
+  color: var(--muted);
+  font-size: 12px;
+  font-family: var(--mono);
+  margin-bottom: 8px;
+}
+.post-card h3 {
+  margin-bottom: 8px;
+}
+.post-card h3 a {
+  color: white;
+  text-decoration: none;
+}
+.post-card h3 a:hover {
+  color: var(--signal);
+}
+.post-excerpt {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.post-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+</style>
+
+</body>
+</html>

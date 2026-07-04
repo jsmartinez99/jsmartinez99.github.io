@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Juan Sebastián Martínez — Blog</title>
+    <link>https://jmartinez.dev</link>
+    <description>Artículos sobre ciberseguridad, AI infrastructure y orquestación de agentes.</description>
+    <language>en</language>
+    <lastBuildDate>Sat, 04 Jul 2026 03:41:41 +0000</lastBuildDate>
+    <item>
+      <title>Portfolio Launch</title>
+      <link>https://jmartinez.dev/posts-built/en/portfolio-launch.html</link>
+      <description>My new personal portfolio is now online — a look at my cybersecurity career journey.</description>
+      <pubDate>2026-07-04T00:00:00+0000</pubDate>
+    </item>
+  </channel>
+</rss>

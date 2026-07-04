@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  nginx:
+    build:
+      context: ..
+      dockerfile: nginx/Dockerfile
+    container_name: jsm-portfolio-nginx
+    ports:
+      - "8080:8080"
+      - "8443:8443"
+    volumes:
+      - ./certs:/etc/nginx/certs:ro
+      - ./www:/var/www/certbot
+    restart: unless-stopped
+    networks:
+      - portfolio-net
+
+networks:
+  portfolio-net:
+    driver: bridge

@@ -1,0 +1,18 @@
+{
+  "name": "jsm-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio personal de Juan Sebastián Martínez",
+  "scripts": {
+    "lint": "htmlhint index.html && html-validate index.html --config .htmlvalidate.json",
+    "check-links": "echo 'Linkchecker skipped in sandbox'",
+    "minify:css": "postcss styles.css --use cssnano -o styles.min.css && mv styles.min.css styles.css",
+    "serve": "npx serve . -p 8080"
+  },
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "html-validate": "^8.0.0",
+    "cssnano": "^7.0.0",
+    "postcss-cli": "^11.0.0",
+    "serve": "^14.2.0"
+  }
+}

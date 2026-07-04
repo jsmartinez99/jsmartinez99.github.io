@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+*.log
+.env
+nginx/certs/live/
+nginx/certs/archive/
+nginx/www/.well-known/

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="alternate icon" href="assets/favicon.ico">
+<title>Juan Sebastián Martínez | Cybersecurity Architect</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- SEO -->
+  <meta name="description" content="Cybersecurity Architect con 20+ años de experiencia. Especialista en arquitecturas seguras, compliance (NIST, ISO 27001, PCI-DSS), orquestación de agentes IA (OpenClaw) y seguridad en infraestructura crítica.">
+  <meta name="keywords" content="cybersecurity, architect, AI, OpenClaw, NIST, ISO 27001, PCI-DSS, Paraguay">
+
+  <!-- OpenGraph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Juan Sebastián Martínez | Cybersecurity Architect">
+  <meta property="og:description" content="Cybersecurity Architect & AI Infrastructure Engineer. 20+ años protegiendo infraestructura crítica.">
+  <meta property="og:image" content="https://jmartinez.dev/assets/og-image.png">
+  <meta property="og:url" content="https://jmartinez.dev/">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Juan Sebastián Martínez | Cybersecurity Architect">
+  <meta name="twitter:description" content="Cybersecurity Architect & AI Infrastructure Engineer. 20+ años de experiencia.">
+  <meta name="twitter:image" content="https://jmartinez.dev/assets/og-image.png">
+
+  <!-- EN description for international crawlers -->
+  <meta name="description" lang="en" content="Cybersecurity Architect & AI Infrastructure Engineer with 20+ years of experience. Specialist in secure architectures, compliance (NIST, ISO 27001, PCI-DSS), multi-agent orchestration, and PKI. Paraguay-based, available global remote.">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Juan Sebastián Martínez",
+    "givenName": "Juan Sebastián",
+    "familyName": "Martínez",
+    "jobTitle": "Cybersecurity Architect",
+    "description": "Cybersecurity Architect & AI Infrastructure Engineer with 20+ years protecting critical infrastructure. Expert in NIST, CIS, ISO 27001, PCI-DSS compliance, multi-agent AI orchestration, and PKI.",
+    "url": "https://jmartinez.dev/",
+    "email": "sebasmartinez@gmail.com",
+    "telephone": "+595 973 325 163",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Asunción",
+      "addressCountry": "PY"
+    },
+    "alumniOf": ["IBM", "PwC"],
+    "knowsAbout": ["Cybersecurity", "NIST", "ISO 27001", "PCI-DSS", "AI Orchestration", "PKI", "Cloud Security", "Zero Trust", "Incident Response"],
+    "hasCredential": [
+      {"@type": "EducationalOccupationalCredential", "name": "Lean Six Sigma"},
+      {"@type": "EducationalOccupationalCredential", "name": "ITIL V3"}
+    ],
+    "sameAs": [
+      "https://linkedin.com/in/jmartinez10"
+    ]
+  }
+  </script>
+
+  <!-- hreflang i18n -->
+  <link rel="alternate" hreflang="es" href="https://jmartinez.dev/">
+  <link rel="alternate" hreflang="en" href="https://jmartinez.dev/en/">
+  <link rel="alternate" hreflang="x-default" href="https://jmartinez.dev/">
+
+  <!-- Scripts -->
+  <script defer src="assets/js/i18n.js"></script>
+  <script defer src="assets/js/contact.js"></script>
+
+  <!-- Umami Analytics (self-hosted) -->
+  <!-- Umami analytics desactivado hasta deploy del server -->
+
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">JSM_SEC // v2025.2</div>
+  <ul class="nav-links">
+    <li><a href="#about" data-i18n="nav.about">Perfil</a></li>
+    <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+    <li><a href="#experiencia" data-i18n="nav.experience">Experiencia</a></li>
+    <li><a href="#openclaw" data-i18n="nav.openclaw">OpenClaw</a></li>
+    <li><a href="#opencode" data-i18n="nav.opencode">open<wbr>code</a></li>
+    <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+    <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+    <li class="lang-toggle">
+      <button onclick="i18n.setLang('es')" class="lang-btn active" data-lang="es" data-i18n="lang.es">ES</button>
+      <span class="lang-sep">|</span>
+      <button onclick="i18n.setLang('en')" class="lang-btn" data-lang="en" data-i18n="lang.en">EN</button>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<div id="hero">
+  <div class="hero-inner">
+    <div class="hero-tag" data-i18n="hero.tag">Cybersecurity Architect · AI Infrastructure · Paraguay</div>
+    <h1><span data-i18n="hero.first_name">Juan Sebastián</span><br><span class="accent" data-i18n="hero.last_name">Martínez</span></h1>
+    <p class="hero-title" data-i18n="hero.description">
+      Arquitecto de Seguridad &amp; Analista Senior de Seguridad de la Información con 20+ años de experiencia. Especialista en diseño de arquitecturas seguras, compliance regulatorio y orquestación de agentes de IA para infraestructura crítica.
+    </p>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num" data-i18n="hero.stat1_num">20+</div>
+        <div class="stat-label" data-i18n="hero.stat1_label">Años de experiencia</div>
+      </div>
+      <div>
+        <div class="stat-num" data-i18n="hero.stat2_num">11</div>
+        <div class="stat-label" data-i18n="hero.stat2_label">Agentes AI orquestados</div>
+      </div>
+      <div>
+        <div class="stat-num" data-i18n="hero.stat3_num">4+</div>
+        <div class="stat-label" data-i18n="hero.stat3_label">Frameworks de compliance</div>
+      </div>
+      <div>
+        <div class="stat-num" data-i18n="hero.stat4_num">5+</div>
+        <div class="stat-label" data-i18n="hero.stat4_label">Sectores industriales</div>
+      </div>
+    </div>
+    <div class="hero-cta">
+      <a href="mailto:sebasmartinez@gmail.com" class="btn btn-primary" data-i18n="hero.cta_contact">✉ Contactar</a>
+      <a href="https://linkedin.com/in/jmartinez10" target="_blank" class="btn btn-ghost" data-i18n="hero.cta_linkedin">🔗 LinkedIn</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about">
+  <div class="section-label" data-i18n="about.label">Perfil profesional</div>
+  <h2 class="section-title" data-i18n="about.title">Quién soy</h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p data-i18n="about.p1">
+        Cybersecurity Architect con más de dos décadas protegiendo infraestructura crítica en seguros, servicios financieros, oil &amp; gas, farmacéuticas y TI. He liderado auditorías de seguridad bajo NIST, CIS, PCI-DSS e ISO 27001 para clientes de IBM, PwC y proyectos propios regionales.
+      </p>
+      <div class="about-highlight" data-i18n="about.quote">
+        "La seguridad no se agrega al final: se diseña desde la arquitectura. Cada sistema debe poder verificarse, auditarse y defenderse por construcción."
+      </div>
+      <p data-i18n="about.p2">
+        Arquitecto de ciberseguridad con dos décadas integrando seguridad en infraestructura crítica, servicios financieros, oil &amp; gas y consultoría global. Combino experiencia en grandes corporaciones (IBM, PwC) con innovación práctica: desarrollo y opero mi propio stack de orquestación multi-agente con gobernanza integrada. Mi enfoque une la solidez del diseño enterprise con la agilidad de la implementación directa sobre infraestructura real.
+      </p>
+    </div>
+    <div>
+      <ul class="contact-list">
+        <li>
+          <span class="c-icon">📍</span>
+          <div>
+            <div style="color:white;font-weight:600" data-i18n="about.location">Asunción, Paraguay</div>
+            <div style="font-size:12px" data-i18n="about.location_sub">Disponible remoto global / proyectos locales</div>
+          </div>
+        </li>
+        <li>
+          <span class="c-icon">📞</span>
+          <div>
+            <div style="color:white;font-weight:600" data-i18n="about.phone">+595 973 325 163</div>
+            <div style="font-size:12px" data-i18n="about.phone_sub">WhatsApp disponible</div>
+          </div>
+        </li>
+        <li>
+          <span class="c-icon">✉</span>
+          <div>
+            <div style="color:white;font-weight:600" data-i18n="about.email">sebasmartinez@gmail.com</div>
+          </div>
+        </li>
+        <li>
+          <span class="c-icon">🔗</span>
+          <div>
+            <div style="color:white;font-weight:600" data-i18n="about.linkedin">linkedin.com/in/jmartinez10</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SKILLS ═══ -->
+<section id="skills">
+  <div class="section-label" data-i18n="skills.label">Competencias técnicas</div>
+  <h2 class="section-title" data-i18n="skills.title">Stack de habilidades</h2>
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <div class="skill-card-icon">🛡️</div>
+      <h3>Security Architecture</h3>
+      <div class="skill-tags">
+        <span class="tag">NIST</span>
+        <span class="tag">CIS</span>
+        <span class="tag">ISO 27001</span>
+        <span class="tag">PCI-DSS</span>
+        <span class="tag">Risk Management</span>
+        <span class="tag">Threat Modeling</span>
+        <span class="tag">Security Audits</span>
+        <span class="tag">Zero Trust</span>
+        <span class="tag">Secure SDLC</span>
+        <span class="tag">Incident Response</span>
+        <span class="tag">Business Continuity</span>
+        <span class="tag">Compliance</span>
+        <span class="tag">Gap Analysis</span>
+        <span class="tag">Vendor Risk Assessment</span>
+        <span class="tag">SOC 2</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-icon">🤖</div>
+      <h3>AI / Automation</h3>
+      <div class="skill-tags">
+        <span class="tag">Multi-Agent Orchestration</span>
+        <span class="tag">Agent Harness Architecture</span>
+        <span class="tag">Looping Engineering</span>
+        <span class="tag">RAG / Vector Memory</span>
+        <span class="tag">LLM Operations (LLMOps)</span>
+        <span class="tag">AI Agent Architecture</span>
+        <span class="tag">Prompt Engineering</span>
+        <span class="tag">AI Workflow Automation</span>
+        <span class="tag">Vector Databases</span>
+        <span class="tag">AI Infrastructure</span>
+        <span class="tag">AI Safety / Alignment</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-icon">🐧</div>
+      <h3>Linux &amp; Infra</h3>
+      <div class="skill-tags">
+        <span class="tag">Ubuntu 24.04</span>
+        <span class="tag">Docker</span>
+        <span class="tag">KVM/libvirt</span>
+        <span class="tag">Bash/Shell</span>
+        <span class="tag">systemd/cron</span>
+        <span class="tag">Tailscale/VPN</span>
+        <span class="tag">DNS Architecture</span>
+        <span class="tag">Nginx</span>
+        <span class="tag">SSH Hardening</span>
+        <span class="tag">iptables/nftables</span>
+        <span class="tag">Git</span>
+        <span class="tag">Python Scripting</span>
+        <span class="tag">Container Networking</span>
+        <span class="tag">Resource Monitoring</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-icon">🔍</div>
+      <h3>Threat Detection</h3>
+      <div class="skill-tags">
+        <span class="tag">Suricata</span>
+        <span class="tag">Zeek / RITA</span>
+        <span class="tag">Sigma / YARA</span>
+        <span class="tag">KQL</span>
+        <span class="tag">Splunk</span>
+        <span class="tag">Qualys</span>
+        <span class="tag">Nessus</span>
+        <span class="tag">Wireshark/tcpdump</span>
+        <span class="tag">SIEM Architecture</span>
+        <span class="tag">IOC Collection</span>
+        <span class="tag">Threat Hunting</span>
+        <span class="tag">MITRE ATT&amp;CK</span>
+        <span class="tag">Forensic Investigation</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-icon">🔐</div>
+      <h3>Cryptography &amp; PKI</h3>
+      <div class="skill-tags">
+        <span class="tag">OpenSSL</span>
+        <span class="tag">EJBCA</span>
+        <span class="tag">Active Directory</span>
+        <span class="tag">Certificate Services</span>
+        <span class="tag">Digital Signature</span>
+        <span class="tag">IAM</span>
+        <span class="tag">PKI Hierarchy</span>
+        <span class="tag">HSM</span>
+        <span class="tag">Key Management</span>
+        <span class="tag">TLS/SSL</span>
+        <span class="tag">Certificate Lifecycle</span>
+        <span class="tag">CRL / OCSP</span>
+        <span class="tag">Code Signing</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-icon">☁️</div>
+      <h3>Cloud &amp; Networking</h3>
+      <div class="skill-tags">
+        <span class="tag">AWS (Practitioner)</span>
+        <span class="tag">VMware / Citrix</span>
+        <span class="tag">OpenWrt</span>
+        <span class="tag">Squid / ClamAV</span>
+        <span class="tag">nDPI</span>
+        <span class="tag">VLAN / Trunking</span>
+        <span class="tag">OSPF / BGP</span>
+        <span class="tag">Load Balancing</span>
+        <span class="tag">Proxy / Reverse Proxy</span>
+        <span class="tag">Cloud Security</span>
+        <span class="tag">VPC / Security Groups</span>
+        <span class="tag">WireGuard / IPsec</span>
+        <span class="tag">Network Monitoring</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ EXPERIENCIA ═══ -->
+<section id="experiencia">
+  <div class="section-label" data-i18n="experience.label">Trayectoria</div>
+  <h2 class="section-title" data-i18n="experience.title">Experiencia profesional</h2>
+
+  <div class="timeline">
+
+    <div class="tl-item">
+      <div class="tl-period">2023 – Presente</div>
+      <div class="tl-role">AI Infrastructure Engineer &amp; Security Architect <span class="badge">STACK PROPIO</span></div>
+      <div class="tl-company">OpenClaw Project — Proyecto Independiente</div>
+      <ul class="tl-bullets">
+        <li data-i18n="experience.openclaw_opencode">Orquesté el proyecto Prod-01 con opencode: plataforma de 7 agentes AI especializados con flujo SDD estricto (PASO-1..13 + INIT-0), sistema de governance enforce con veto de seguridad, integración MCP/Postgres, y ciclo completo de trazabilidad RADAR — proyectado como estándar de orquestación multi-agente para los próximos ciclos del stack OpenClaw</li>
+        <li data-i18n="experience.openclaw_agents">Diseñé y opero un stack de orquestación multi-agente con 11 LLMs especializados sobre infraestructura self-hosted, implementando arquitectura de gobernanza con agente de seguridad como co-administrador y veto authority</li>
+        <li data-i18n="experience.openclaw_memory">Construí sistema de memoria persistente multi-agente con RAG, vectores Qdrant/sqlite-vec, y gestión automatizada de contexto conversational mediante cron jobs</li>
+        <li data-i18n="experience.openclaw_infra">Integré infraestructura completa: servidores MCP, flujos n8n, Open WebUI + Ollama, Docker inter-contenedor, VPN Tailscale, y resolución de incidentes complejos de red y DNS</li>
+        <li data-i18n="experience.openclaw_security">Implementé hardening de router OpenWrt con DNS en capas (dnsmasq → Unbound → DoH/DNSCrypt), proxy Squid+ClamAV vía C-ICAP, y monitoreo de red con Suricata/Zeek/nDPI</li>
+        <li data-i18n="experience.openclaw_kvm">Conduje migración KVM/libvirt de 8 VMs Linux; identifiqué y remedié vulnerabilidad crítica de seguridad (VM Metasploitable2 bridgeada a WiFi de LAN)</li>
+      </ul>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-period">2024 – 2025</div>
+      <div class="tl-role">Cyber Security Architect (COE)</div>
+      <div class="tl-company">Prisma MP</div>
+      <ul class="tl-bullets">
+        <li data-i18n="experience.prisma_desacople">Diseñé e implementé arquitectura de seguridad para el proyecto de desacople de infraestructuras IT de Prisma, Payway y NewPay sin interrupción operativa</li>
+        <li data-i18n="experience.prisma_risk">Desarrollé evaluaciones de amenazas y planes de gestión de riesgos garantizando separación de recursos y continuidad del negocio</li>
+        <li data-i18n="experience.prisma_team">Coordiné equipos cross-funcionales para asegurar protección robusta durante la transición</li>
+      </ul>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-period">2023 – 2024</div>
+      <div class="tl-role">Cyber Security Architect</div>
+      <div class="tl-company">Cloud Legion</div>
+      <ul class="tl-bullets">
+        <li data-i18n="experience.cloudlegion_systems">Diseñé y mantuve sistemas de seguridad integrados alineados con requerimientos IT organizacionales</li>
+        <li data-i18n="experience.cloudlegion_threat">Conduje threat modeling y evaluaciones de vulnerabilidades para identificar y mitigar riesgos proactivamente</li>
+        <li data-i18n="experience.cloudlegion_stakeholders">Colaboré con stakeholders para implementar y monitorear medidas de seguridad con mínima disrupción operativa</li>
+      </ul>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-period">2021 – 2023</div>
+      <div class="tl-role">Cyber Security Advisory – Senior Associate (US Accounts)</div>
+      <div class="tl-company">PwC</div>
+      <ul class="tl-bullets">
+        <li data-i18n="experience.pwc_audits">Lideré auditorías de seguridad para clientes US bajo frameworks NIST y CIS, revisando aplicaciones, procesos e IAM</li>
+        <li data-i18n="experience.pwc_gaps">Identifiqué brechas de seguridad y desarrollé estrategias de remediación alineadas con estándares regulatorios</li>
+        <li data-i18n="experience.pwc_liaison">Actué como enlace principal con stakeholders para mejorar compliance y resiliencia operacional</li>
+      </ul>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-period">2016 – 2019</div>
+      <div class="tl-role" data-i18n="experience.teisa_role">Business Development Manager <span style="font-weight:400;color:var(--muted)">(Security Projects)</span></div>
+      <div class="tl-company" data-i18n="experience.teisa_company">TEISA, Asunción, Paraguay</div>
+      <ul class="tl-bullets">
+        <li data-i18n="experience.teisa_b1">Dirigí un equipo de consultores de Business Development, impulsando el rollout estratégico de iniciativas de seguridad</li>
+        <li data-i18n="experience.teisa_b2">Conduje evaluaciones comerciales y análisis de datos para identificar oportunidades de mejora</li>
+        <li data-i18n="experience.teisa_b3">Desarrollé planes balanceando objetivos de ventas con estándares de aseguramiento de calidad</li>
+      </ul>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-period">2014 – 2016</div>
+      <div class="tl-role">PKI Consultant &amp; Project Manager</div>
+      <div class="tl-company">Encode SA</div>
+      <ul class="tl-bullets">
+        <li>Gestioné proyectos de seguridad PKI en Bolivia, Paraguay y Argentina con adherencia a estándares internacionales de cifrado</li>
+        <li>Arquitecté y supervisé el Security Datacenter para code100.com.py</li>
+      </ul>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-period">2012 – 2014</div>
+      <div class="tl-role">Infrastructure Coordinator – Digital Signature PKI Team</div>
+      <div class="tl-company">Jefatura de Gabinetes de Ministros · Argentina</div>
+      <ul class="tl-bullets">
+        <li>Lideré el equipo PKI de firma digital, implementando Microsoft Certificate Services integrado con Active Directory</li>
+        <li>Desplegué aplicaciones con certificados para asegurar transacciones y comunicaciones electrónicas</li>
+      </ul>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-period">2005 – 2014</div>
+      <div class="tl-role">IT Security Lead &amp; Global Process Coordinator</div>
+      <div class="tl-company">IBM Argentina</div>
+      <ul class="tl-bullets">
+        <li>Dirigí auditorías de seguridad (SOX, PCI-DSS, ISO 27001) y gestioné herramientas de compliance como focal point principal de auditorías</li>
+        <li>Coordiné procesos de IAM alineados con estándares globales de IBM</li>
+        <li>Lideré especialistas en patch management, vulnerability scanning y remediación de seguridad</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ OPENCLAW ═══ -->
+<section id="openclaw">
+  <div class="section-label" data-i18n="openclaw.label">Proyecto flagship</div>
+  <h2 class="section-title" data-i18n="openclaw.title">Sistema OpenClaw</h2>
+
+  <div class="openclaw-box">
+    <h3>🤖 Multi-Agent LLM Orchestration Stack</h3>
+    <p data-i18n="openclaw.desc">
+      OpenClaw es un sistema propietario de orquestación de agentes de IA diseñado, construido y operado de forma independiente. Con 11 agentes especializados corriendo en hardware CPU-only self-hosted, implementa una arquitectura de gobernanza de seguridad avanzada: el agente de seguridad actúa como co-administrador con poder de veto sobre acciones de infraestructura, previniendo alucinaciones y acciones autónomas no autorizadas.
+    </p>
+    <div class="openclaw-specs">
+      <div class="spec-item">
+        <div class="spec-label" data-i18n="openclaw.hw">Hardware</div>
+        <div class="spec-value" data-i18n="openclaw.hw_val">ThinkPad T495 · AMD Ryzen 7 PRO · 32GB RAM</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label" data-i18n="openclaw.os">OS / Plataforma</div>
+        <div class="spec-value" data-i18n="openclaw.os_val">Ubuntu 24.04 · Docker · Ollama</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label" data-i18n="openclaw.agents">Agentes</div>
+        <div class="spec-value" data-i18n="openclaw.agents_val">11 agentes especializados</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label" data-i18n="openclaw.vectordb">Vector DB</div>
+        <div class="spec-value" data-i18n="openclaw.vectordb_val">Qdrant + sqlite-vec (híbrido)</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label" data-i18n="openclaw.llms">Modelos LLM</div>
+        <div class="spec-value" data-i18n="openclaw.llms_val">qwen2.5:7b → coder:7b → 3b (fallback)</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label" data-i18n="openclaw.integrations">Integraciones</div>
+        <div class="spec-value" data-i18n="openclaw.integrations_val">n8n · MCP · Open WebUI · Tailscale</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="color:#B0C4D8; font-size:14px; line-height:1.7;" data-i18n="openclaw.market_note">
+    <strong style="color:white">Relevancia para el mercado:</strong> Esta experiencia posiciona al profesional de forma única en la intersección de ciberseguridad y AI/automation — dos de los campos con mayor demanda y escasez de talento en LATAM 2025-2026. Capacidades que incluyen gobernanza de IA, detección de alucinaciones, arquitectura de memoria persistente y hardening de infraestructura para sistemas autónomos.
+  </div>
+</section>
+
+<!-- ═══ OPENCODE / Prod-01 ═══ -->
+<section id="opencode">
+  <div class="section-label" data-i18n="opencode.label">Orchestration Platform</div>
+  <h2 class="section-title" data-i18n="opencode.title">open<wbr>code &amp; Prod&#8209;01</h2>
+
+  <div class="openclaw-box">
+    <h3>🤖 7-Agent SDD Orchestration with Governance by Design</h3>
+    <p data-i18n="opencode.desc">
+      Prod-01 es un proyecto de orquestación multi-agente construido sobre <strong>opencode</strong>, una CLI nativa de IA para ingeniería de software. Implementa una arquitectura de 7 agentes especializados con modelos LLM diferenciados, flujo SDD de 13 pasos, y un sistema de gobernanza donde el agente de seguridad tiene poder de veto absoluto sobre acciones de infraestructura.
+    </p>
+    <p data-i18n="opencode.desc2" style="margin-top:12px">
+      El stack se ejecuta 100% self-hosted en CPU-only (ThinkPad T495, 32GB RAM), con Docker sandbox aislado, enforcement pre/post-action, integración MCP, y trazabilidad RADAR completa — todo sin depender de GPU ni servicios cloud.
+    </p>
+    <div class="openclaw-specs">
+      <div class="spec-item">
+        <div class="spec-label" data-i18n="opencode.agents">Agentes</div>
+        <div class="spec-value" data-i18n="opencode.agents_val">7 especializados · Main · Security · Change Mgr · Planner · Coder · Dev · Research</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label" data-i18n="opencode.models">Modelos LLM</div>
+        <div class="spec-value" data-i18n="opencode.models_val">deepseek-v4-flash · deepseek-v4-pro · qwen3-coder:480b · devstral-2:123b · minimax-m2.7 · deepseek-v3.2 · glm-5.2</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label" data-i18n="opencode.sdd">Flujo SDD</div>
+        <div class="spec-value" data-i18n="opencode.sdd_val">13 pasos · PASO-1..13 + INIT-0 · Pre/Post action enforcement</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label" data-i18n="opencode.sandbox">Sandbox</div>
+        <div class="spec-value" data-i18n="opencode.sandbox_val">Docker aislado · 10 controles C1-C10 · no-root · read-only · network bridge</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label" data-i18n="opencode.governance">Gobernanza</div>
+        <div class="spec-value" data-i18n="opencode.governance_val">Security veto · Checkpoint validation · RADAR traceability · Git commit hooks</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label" data-i18n="opencode.infra">Infraestructura</div>
+        <div class="spec-value" data-i18n="opencode.infra_val">Self-hosted CPU-only · Docker · Ollama · n8n · MCP · Tailscale</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="color:#B0C4D8; font-size:14px; line-height:1.7;" data-i18n="opencode.market_note">
+    <strong style="color:white">Valor diferencial:</strong> Prod-01 demuestra la capacidad de diseñar, desplegar y operar un sistema multi-agente con gobernanza de seguridad integrada — no como feature agregado sino como condición de diseño. La combinación de orchestación SDD, veto de seguridad, sandbox aislado y trazabilidad forense posiciona este stack como referencia para entornos donde la autonomía de agentes IA debe estar controlada por diseño.
+  </div>
+</section>
+
+<!-- ═══ FORMACIÓN ═══ -->
+<section id="contacto">
+  <div class="section-label" data-i18n="education.label">Formación y certificaciones</div>
+  <h2 class="section-title" data-i18n="education.title">Educación</h2>
+
+  <div style="margin-bottom:32px">
+    <div style="font-size:1.1rem;font-weight:700;margin-bottom:4px" data-i18n="education.degree">Bachelor of Science · Computer Systems Analysis / MIS</div>
+    <div style="color:var(--muted);font-size:14px;margin-bottom:20px" data-i18n="education.university">UTN – Universidad Tecnológica Nacional, Buenos Aires, Argentina</div>
+  </div>
+
+  <div class="certs-row">
+    <div class="cert-pill"><span class="cert-dot"></span> Lean Six Sigma</div>
+    <div class="cert-pill"><span class="cert-dot"></span> ITIL V3</div>
+    <div class="cert-pill"><span class="cert-dot"></span> AWS Cloud Practitioner</div>
+    <div class="cert-pill"><span class="cert-dot pending"></span> CISSP (en progreso)</div>
+    <div class="cert-pill"><span class="cert-dot"></span> PKI &amp; Cryptography</div>
+    <div class="cert-pill"><span class="cert-dot"></span> Microsoft / Oracle</div>
+    <div class="cert-pill"><span class="cert-dot new"></span> AI Agent Orchestration</div>
+  </div>
+
+  <div style="margin-top:32px;display:flex;gap:32px;flex-wrap:wrap">
+    <div>
+      <div style="font-size:13px;color:var(--muted);margin-bottom:4px" data-i18n="languages.label">Idiomas</div>
+      <div style="font-size:15px">
+        <span style="font-weight:600">Español</span> <span style="color:var(--muted);font-size:13px">Nativo</span>
+        <span style="margin:0 8px;color:var(--muted)">·</span>
+        <span style="font-weight:600">Inglés</span> <span style="color:var(--muted);font-size:13px">C1 Avanzado</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ATS Hidden Keywords -->
+  <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden">
+    cybersecurity architect security auditor NIST CIS ISO 27001 PCI-DSS SOC 2 risk management threat modeling zero trust incident response business continuity compliance gap analysis vendor risk assessment secure SDLC multi-agent orchestration LLM AI governance PKI OpenSSL EJBCA Active Directory certificate services HSM key management Ubuntu Docker KVM/libvirt Suricata Zeek Sigma YARA Splunk MITRE ATT&CK forensic investigation threat hunting firewall VPN wireguard ipsec VLAN OSPF BGP cloud security OpenWrt Paraguay remote
+  </div>
+
+  <div style="margin-top:64px;padding-top:40px;border-top:1px solid rgba(0,200,255,0.1)">
+    <h3 style="font-size:1.2rem;margin-bottom:24px" data-i18n="contact.cta">¿Hablamos?</h3>
+
+    <!-- Contact Form (Formspree) -->
+    <form id="contact-form" action="https://formspree.io/f/xvgonwyg" method="POST" style="max-width:500px;margin-bottom:24px">
+      <!-- Honeypot anti-spam -->
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+      <div style="margin-bottom:12px">
+        <label for="form-name" style="display:block;font-size:13px;margin-bottom:4px;color:var(--muted)" data-i18n="contact.form.name">Nombre</label>
+        <input type="text" id="form-name" name="name" required
+               style="width:100%;padding:10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:4px;color:white;font-size:14px">
+      </div>
+      <div style="margin-bottom:12px">
+        <label for="form-email" style="display:block;font-size:13px;margin-bottom:4px;color:var(--muted)" data-i18n="contact.form.email">Email</label>
+        <input type="email" id="form-email" name="email" required
+               style="width:100%;padding:10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:4px;color:white;font-size:14px">
+      </div>
+      <div style="margin-bottom:12px">
+        <label for="form-message" style="display:block;font-size:13px;margin-bottom:4px;color:var(--muted)" data-i18n="contact.form.message">Mensaje</label>
+        <textarea id="form-message" name="message" rows="4" required
+                  style="width:100%;padding:10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:4px;color:white;font-size:14px;resize:vertical"></textarea>
+      </div>
+      <div id="form-feedback" style="display:none;padding:10px;border-radius:4px;margin-bottom:12px;font-size:13px"></div>
+      <button type="submit" class="btn btn-primary" data-i18n="contact.form.send">Enviar mensaje</button>
+    </form>
+
+    <div style="display:flex;gap:16px;flex-wrap:wrap">
+      <a href="mailto:sebasmartinez@gmail.com" class="btn btn-primary" data-i18n="contact.email">✉ sebasmartinez@gmail.com</a>
+      <a href="tel:+595973325163" class="btn btn-ghost" data-i18n="contact.phone">📞 +595 973 325 163</a>
+      <a href="https://linkedin.com/in/jmartinez10" target="_blank" class="btn btn-ghost" data-i18n="contact.linkedin">🔗 LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div data-i18n="footer.text">Juan Sebastián Martínez · Asunción, Paraguay</div>
+  <div style="margin-top:8px;font-size:11px" data-i18n="footer.sub">Cybersecurity Architect · AI Infrastructure · 20+ años de experiencia</div>
+</footer>
+
+</body>
+</html>
