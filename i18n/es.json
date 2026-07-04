@@ -47,6 +47,8 @@
   "experience.openclaw_infra": "Integré infraestructura completa: servidores MCP, flujos n8n, Open WebUI + Ollama, Docker inter-contenedor, VPN Tailscale, y resolución de incidentes complejos de red y DNS",
   "experience.openclaw_security": "Implementé hardening de router OpenWrt con DNS en capas (dnsmasq → Unbound → DoH/DNSCrypt), proxy Squid+ClamAV vía C-ICAP, y monitoreo de red con Suricata/Zeek/nDPI",
   "experience.openclaw_kvm": "Conduje migración KVM/libvirt de 8 VMs Linux; identifiqué y remedié vulnerabilidad crítica de seguridad (VM Metasploitable2 bridgeada a WiFi de LAN)",
+  "experience.opencode_platform": "Implementé opencode como plataforma core de orquestación: CLI nativa de IA con 7 agentes multi-modelo, enforcement de governance pre/post-action, sandbox Docker aislado con 10 controles de seguridad (C1-C10), y ciclo SDD de 13 pasos con trazabilidad RADAR completa",
+  "experience.openclaw_stack": "Construí y opero el stack OpenClaw sobre servidor self-hosted AMD Ryzen 7 PRO 32GB RAM CPU-only con Ubuntu 24.04, Docker, Ollama y 11 modelos LLM especializados (deepseek-v4, qwen3-coder, devstral-2, minimax-m2.7, glm-5.2) con fallback chain automático",
   "experience.prisma_desacople": "Diseñé e implementé arquitectura de seguridad para el proyecto de desacople de infraestructuras IT de Prisma, Payway y NewPay sin interrupción operativa",
   "experience.prisma_risk": "Desarrollé evaluaciones de amenazas y planes de gestión de riesgos garantizando separación de recursos y continuidad del negocio",
   "experience.prisma_team": "Coordiné equipos cross-funcionales para asegurar protección robusta durante la transición",
