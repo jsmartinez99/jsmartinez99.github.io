@@ -22,9 +22,9 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
       - name: Install deps
-        run: npm install
+        run: npm ci
       - name: HTMLHint
         run: npx htmlhint index.html
       - name: Validate HTML
@@ -40,7 +40,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
